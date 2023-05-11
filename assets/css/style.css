@@ -132,7 +132,7 @@ section {
     height: 100%;
     text-align: center;
     margin-top: 18rem;
-
+/*    position: relative;*/
 }
 
 .sm-home .row .sm-image img {
@@ -475,6 +475,17 @@ section {
 	text-align: center;
 }
 
+/*banner with ligthbox*/
+
+.sm-banner .owl-carousel .item {
+  height: 100%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  align-items: center;*/
+/*  justify-content: center;*/
+}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
