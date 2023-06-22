@@ -79,8 +79,7 @@ p:last-child{
   font-weight: 500;
 }
 
-
-
+/*header*/
 .kb-header{
   background: var(--white);
   z-index: 1000;
@@ -91,14 +90,13 @@ p:last-child{
   justify-content: space-between;
 }
 .kb-header .container .kb-logo img{
-  height: 12rem;
+  height: 10rem;
 }
 .kb-header .container .kb-navbar a{
-  padding: 1rem 2rem;
-  font-size: 2rem;
+  padding: .8rem 2rem;
+  font-size: 1.8rem;
   color: var(--black);
-  font-weight: 500;
-  
+  font-weight: 600;
 }
 .kb-header .container .kb-navbar a:hover{
   color: var(--white);
@@ -107,9 +105,8 @@ p:last-child{
 .kb-header .container .kb-menu-btn .kb-btn{
   font-size: 2rem;
   color: var(--white);
-  padding: 1rem 3rem;
+  padding: .8rem 2rem;
   background: var(--black);
-
 }
 .kb-header .container .kb-menu-btn .kb-btn:hover{
   background: var(--yellow);
@@ -122,30 +119,44 @@ p:last-child{
   display: none;
 }
 
-
 .kb-home{
   padding: 0;
   margin-top: 6.5rem;
-  clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,0 85%);
 }
 .kb-home .slide{
+  position: relative;
+  width: 120%;
   min-height: 95vh;
   background-size: cover !important;
   background-position: center !important;
   padding: 2rem 9%;
   display: flex;
   align-items: center;
+  clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,0 85%);
+}
+.kb-home .slide::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .kb-home .content{
   width: 60rem;
+  position: relative;
+  z-index: 1;
 }
 .kb-home .content span{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--yellow);
-  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .kb-home .content h3{
   color: var(--white);
+  margin-bottom: 1rem;
 }
 .swiper-pagination-bullet{
   height: 1rem;
@@ -157,7 +168,7 @@ p:last-child{
   background: var(--yellow);
 }
 
-
+/*about*/
 .kb-about .kb-image{
   position: relative;
 }
@@ -193,9 +204,8 @@ p:last-child{
 }
 .kb-about .kb-content p{
   font-size: 1.5rem;
-  line-height: 1.7;
   color: var(--gray);
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 .kb-about .kb-box-container{
   display: flex;
@@ -214,6 +224,51 @@ p:last-child{
   color: var(--yellow);
 }
 
+/*skils*/
+.kb-skills {
+  background: var(--white);
+}
+.kb-skills .kb-wrap-content{
+  width: 90%;
+}
+.kb-skills h4{
+  color: var(--yellow);
+  font-weight: 600;
+}
+.kb-skills .kb-wrap-content h4::after{
+  border-bottom: .4rem solid var(--yellow);
+  width: 50px;
+  content: "";
+  display: block;
+  margin: 2rem 0;
+}
+.kb-skills p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.kb-skills .kb-wrap-list{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.kb-skills .kb-wrap-list li{
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.kb-skills .kb-wrap-list li i{
+  color: var(--yellow);
+  padding-right: 1rem;
+}
+.kb-skills .kb-wrap-image img{
+  width: 100%;
+}
+/*discount*/
+.kb-discount{
+  background: var(--white);
+  padding: 0;
+}
+.kb-discount .container{
+  background: var(--yellow);
+}
 
 /*services*/
 .kb-service{
@@ -226,6 +281,7 @@ p:last-child{
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 1rem;
 }
 .kb-service .box img{
   height: 25rem;
@@ -286,7 +342,7 @@ p:last-child{
 }
 .kb-pricing .box .kb-content p{
   color: var(--offwhite);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .kb-pricing .box .kb-plan h4{
   color: var(--yellow);
@@ -295,7 +351,7 @@ p:last-child{
 .kb-pricing .box .kb-plan span{
   float: right;
   color: var(--offwhite);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: none;
 }
 
@@ -304,6 +360,7 @@ p:last-child{
   padding: 0;
   position: relative;
 }
+
 /*.kb-training .kb-overlay{
   min-height: 70vh;
   position: fixed;
@@ -315,6 +372,15 @@ p:last-child{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.kb-training .kb-training-video::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .kb-training .kb-training-video .kb-content{
   position: absolute;
@@ -350,7 +416,6 @@ p:last-child{
   background: var(--white);
 }
 .kb-trainer .box{
-  height: 50rem;
   cursor: pointer;
 }
 .kb-trainer .box:hover .kb-content{
@@ -359,8 +424,9 @@ p:last-child{
 .kb-trainer .box .kb-image{
   overflow: hidden;
   position: relative;
-  height: 50rem;
-  margin: 20px;
+  height: 40rem;
+  margin: 0 20px;
+  border-radius: 1rem;
 }
 .kb-trainer .box .kb-image img{
   width: 100%;
@@ -393,6 +459,43 @@ p:last-child{
   color: var(--white);
   margin-right: 1rem;
 }
+/*testimonial*/
+.kb-testimonial{
+  background-color: #f2f2f2;
+}
+.kb-testimonial .kb-wrapper-testi{
+  background-image: url('../img/map-dots.png');
+}
+.kb-testimonial .kb-wrap-testimonial{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.kb-testi-img{
+  border-radius: .7rem;
+}
+.kb-testimonial h5{
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+.kb-testimonial p{
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.kb-testimonial p::before{
+    content: "\"";
+    font-weight: 800;
+    display: block;
+    color: var(--yellow);
+    font-size: 64px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+
 /*contact us*/
 .kb-contact{
   background: var(--white);
@@ -400,11 +503,11 @@ p:last-child{
 .kb-contact .kb-contact-form{
   color: var(--black);
 }
-.kb-contact .kb-contact-form h3{
+.kb-contact .kb-contact-form h4{
   text-transform: uppercase;
 }
 .kb-contact .kb-contact-form p{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--lightblack);
   line-height: 1.4;
   text-transform: uppercase;
@@ -414,7 +517,7 @@ p:last-child{
   color: var(--black);
   width: 100%;
   padding: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border: var(--border);
 }
 .kb-contact .kb-contact-form .kb-btn{
@@ -429,6 +532,7 @@ p:last-child{
 .kb-footer{
   padding-top: 6rem;
   color: var(--white);
+  background: url(../img/footer-bg-black.jpg);
 }
 .kb-footer .kb-group a{
   color: var(--lightgray);
@@ -464,7 +568,7 @@ p:last-child{
 }
 .kb-footer .kb-group i{
   font-size: 1.5rem;
-  padding-top: 1rem;
+  padding-top: .4rem;
   padding-right: 1rem;
   color: var(--yellow);
 }
@@ -484,12 +588,12 @@ p:last-child{
   margin-top: 1rem;
 }
 .kb-footer .kb-credit{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   text-align: center;
-  background: #000;
+  background-color: rgba(0,0,0,.25);
   padding: 2rem 0;
-  margin-top: 5rem;
+/*  margin-top: 5rem;*/
 }
 .kb-footer .kb-credit a{
   color: var(--white);
