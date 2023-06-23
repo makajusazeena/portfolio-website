@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.3/swiper-bundle.min.css">
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css">
     <!-- custom style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -116,37 +118,7 @@
             </div>
         </div>
     </section>
-    <!-- skills -->
-    <section class="kb-skills" id="skills">
-        <div class="container">
-           <div class="row">
-               <div class="col-md-6">
-                  <div class="kb-wrap-content">
-                      <h4>what skills will you improve?</h4>
-                      <p>Nulla facilisi. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies.</p>
-                      <p>Nulla facilisi. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies.</p>
-                  </div> 
-               </div>
-               <div class="col-md-3">
-                   <div class="kb-wrap-list">
-                       <ul>
-                           <li><i class="fa-solid fa-plus"></i>rapidity</li>
-                           <li><i class="fa-solid fa-plus"></i>reaction</li>
-                           <li><i class="fa-solid fa-plus"></i>impact force</li>
-                           <li><i class="fa-solid fa-plus"></i>endurance</li>
-                           <li><i class="fa-solid fa-plus"></i>tactics</li>
-                           <li><i class="fa-solid fa-plus"></i>strength</li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="col-md-3">
-                   <div class="kb-wrap-image">
-                       <img src="assets/img/skills-men.png" alt="">
-                   </div>
-               </div>
-           </div> 
-        </div>
-    </section>
+    
     <!-- discount -->
     <!-- <section class="kb-discount" id="discount">
         <div class="container">
@@ -206,6 +178,37 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section class="kb-skills" id="skills">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                  <div class="kb-wrap-content">
+                      <h4>what skills will you improve?</h4>
+                      <p>Nulla facilisi. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies.</p>
+                      <p>Nulla facilisi. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies. Suspendisse malesuada, diam ut mattis lacinia, nibh mi ultrices felis, ultricies.</p>
+                  </div> 
+               </div>
+               <div class="col-md-3">
+                   <div class="kb-wrap-list">
+                       <ul>
+                           <li><i class="fa-solid fa-plus"></i>rapidity</li>
+                           <li><i class="fa-solid fa-plus"></i>reaction</li>
+                           <li><i class="fa-solid fa-plus"></i>impact force</li>
+                           <li><i class="fa-solid fa-plus"></i>endurance</li>
+                           <li><i class="fa-solid fa-plus"></i>tactics</li>
+                           <li><i class="fa-solid fa-plus"></i>strength</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-md-3">
+                   <div class="kb-wrap-image">
+                       <img src="assets/img/skills-men.png" alt="">
+                   </div>
+               </div>
+           </div> 
         </div>
     </section>
     <!-- pricing -->
@@ -328,31 +331,26 @@
     <!-- testimonial -->
     <section class="kb-testimonial" id="testimonial">
         <div class="container">
-            <div class="kb-wrapper-testi kb-swiper">
-                <h1 class="kb-heading">Our testimonials</h1>
-                <div class="swiper-wrapper">
-                    <div class="kb-wrap-testimonial swiper-slide slide">
-                        <img class="kb-testi-img" src="assets/img/testi_1.jpg" alt="">
-                        <h5>John doe</h5>
-                        <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    </div>
-                    <div class="kb-wrap-testimonial swiper-slide slide">
-                        <img class="kb-testi-img" src="assets/img/testi_2.jpg" alt="">
-                        <h5>John doe</h5>
-                        <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    </div>
+            <h1 class="kb-heading">Our testimonials</h1>
+            <div class="kb-wrapper-testimonial">
+                <div class="kb-wrap-testimonial">
+                    <img class="kb-testi-img" src="assets/img/testi_1.jpg" alt="">
+                    <h5>John doe</h5>
+                    <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
-                <div class="swiper-pagination"></div>
-
+                <div class="kb-wrap-testimonial">
+                    <img class="kb-testi-img" src="assets/img/testi_2.jpg" alt="">
+                    <h5>John doe</h5>
+                    <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- a day at training -->
     <section class="kb-training" id="training">
-        <div id="kb-overlay"></div>
         <div class="kb-training-video" style="background-image: url('assets/img/thumb-banner.jpg');">
             <div class="kb-content">
-                <a data-fancybox href="https://www.youtube.com/embed/d5jsRWLNrQ0?autoplay=1" class="various fancybox">
+                <a data-src="https://www.youtube.com/embed/d5jsRWLNrQ0?autoplay=1" href="javascript:;" class="iframe various fancybox">
                     <i class="fa-sharp fa-regular fa-circle-play"></i>
                 </a>
                 <h4>a day at training</h4>
@@ -375,7 +373,8 @@
                                     <input type="text" class="form-control" placeholder="full name">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="subject"></label>
+                                    <label for="subject"></label
+                                    >
                                     <input type="text" class="form-control" placeholder="subject">
                                 </div>
                                 <div class="col-md-6">
@@ -480,6 +479,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.3/swiper-bundle.min.js"></script>
+    <script src="assets/library/slick-1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

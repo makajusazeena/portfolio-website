@@ -13,34 +13,40 @@ window.onscroll = () => {
 
 var swiper = new Swiper(".kb-swiper", {
 
-	spaceBetween: 20,
-	effect: "fade",
+	// spaceBetween: 10,
+	// effect: "fade",
 	loop: true,
-	grabCursor: true,
 	centeredSlides: true,
 	pagination: {
 		el: ".swiper-pagination",
-		clickable: true,
 	},
 });
+
+$(document).ready(function(){
+  $('.kb-wrapper-testimonial').slick({
+  	slidesToShow: 1,
+  	autoplay: true,
+  	arrows: false,
+  	infinite: true,
+  });
+});
+
 
 // Fancybox.bind('.fancybox', {
 // //
 // });
 jQuery(document).ready(function(){
-	jQuery(".various").fancybox({
-	    	type: "iframe",
-	    	// fullScreen : {
-			//     autoStart: true
-			// }
-            // maxWidth    : 800,
-            // maxHeight   : 600,
-            // fitToView   : false,
-            // width       : '70%',
-            // height      : '70%',
-            // autoSize    : true,
-            // closeClick  : false,
-            // openEffect  : 'none',
-            // closeEffect : 'none'
-        });
+	$('.fancybox').fancybox({
+	    buttons: [
+	      'close'
+	    ],
+	    animationEffect: 'fade',
+	    transitionEffect: 'fade',
+	    iframe: {
+	      css: {
+	        width: '800px',
+	        height: '450px'
+	      }
+	    }
+  });
 })
