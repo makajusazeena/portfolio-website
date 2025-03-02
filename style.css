@@ -226,7 +226,7 @@ nav ul {
 .flip-container {
   perspective: 1000px;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 .flipper {
   position: relative;
@@ -237,6 +237,8 @@ nav ul {
 }
 .sm-whatido-card {
   position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: var(--bg-grey-dark);
   border-radius: 16px;
   padding: 50px 30px;
@@ -309,7 +311,7 @@ nav ul {
 }
 .sm-scroll-wrap h4 {
   position: absolute;
-  top: -10%;
+  top: -24%;
   width: 70%;
   font-family: var(--font-playfair);
   text-transform: uppercase;
@@ -556,6 +558,7 @@ footer .sm-section-title.left h4 {
   color: var(--primary-100);
   font-family: var(--font-poppins);
   font-size: 14px;
+  padding-bottom: 8px;
 }
 .sm-contact-body p {
   width: 70%;
@@ -572,6 +575,7 @@ footer .sm-section-title.left h4 {
   justify-content: space-between;
   align-items: center;
   gap: 0;
+  padding-bottom: 20px;
 }
 .sm-contact-form .primary-btn:hover {
   border: 0.1px solid var(--primary-100);
