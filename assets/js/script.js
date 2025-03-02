@@ -32,7 +32,7 @@ document.addEventListener("scroll", function () {
   const cardBody = document.querySelector(".sm-card-body");
 
   const cardBodyRect = cardBody.getBoundingClientRect();
-  const cardBodyMiddle = cardBodyRect.top + cardBodyRect.height * 0.6; // 60% of card body
+  const cardBodyMiddle = cardBodyRect.top + cardBodyRect.height * 0.4; // 50% of card body
 
   const windowHeight = window.innerHeight;
 
