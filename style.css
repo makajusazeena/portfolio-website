@@ -423,17 +423,18 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   padding: 70px 70px;
+  gap: 30px;
 }
 .sm-counter-body .sm-counter-item {
-  height: 160px;
-  width: 230px;
-  border: 1px solid var(--primary-100);
-  border-radius: 0 50px 0 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: relative;
+  height: 160px;
+  width: 230px;
+  border: 1px solid var(--primary-100);
+  border-radius: 0 50px 0 0;
 }
 .sm-counter-icon i {
   position: absolute;
@@ -611,4 +612,190 @@ footer .sm-section-title.left h4 {
   color: var(--white-100);
   margin-top: 20px;
   margin-bottom: 0;
+}
+#sm-menu-toggle {
+  display: none;
+}
+#sm-menu-toggle i {
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--secondary-100);
+}
+
+/* **** RESPONSIVE **** */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sm-logo {
+    height: 40px;
+  }
+  #sm-menu-toggle {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: var(--primary-100);
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    padding: 15px 0;
+    z-index: 9;
+  }
+  nav ul a {
+    color: var(--white-100);
+  }
+  /* nav ul a.active {
+    color: var(--white-100);
+  } */
+  nav ul {
+    a:hover,
+    a.active {
+      color: var(--white-100);
+      text-decoration: underline;
+    }
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav ul li {
+    padding: 10px 15px;
+  }
+  nav.active {
+    display: flex;
+  }
+  /* home */
+  .sm-home-wrap {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .sm-home-wrap .sm-title {
+    width: 95%;
+    top: 24%;
+    left: 2.5%;
+    text-align: center;
+  }
+  .sm-home-wrap .sm-body {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  span {
+    font-size: 12px;
+  }
+  /* about */
+  .sm-about-wrap {
+    padding-top: 160px;
+  }
+  .sm-about-grid {
+    margin: 35px 0;
+  }
+  .sm-section-title.center {
+    margin-bottom: 60px;
+  }
+  .sm-card-body {
+    width: 100%;
+  }
+  .sm-card-body h4 {
+    margin: 16px 0;
+  }
+  .sm-whatido-wrap {
+    padding-bottom: 60px;
+  }
+  /* brand */
+  .sm-scroll-wrap h4 {
+    width: 100%;
+    top: -34%;
+  }
+  .sm-scroll-wrap img {
+    width: 60%;
+  }
+  .sm-scroll-wrap h2 {
+    font-size: 60px;
+  }
+  .sm-scroll-div-first {
+    top: 40%;
+  }
+  .sm-scroll-div-second {
+    top: 59%;
+  }
+  .sm-scroll-div-third {
+    top: 77%;
+  }
+  /* counter */
+  .sm-counter-body {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .sm-counter-body .sm-counter-item {
+    height: 130px;
+  }
+  /* work */
+  .sm-work-item {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .sm-work-item .sm-image {
+    margin-right: 0;
+  }
+  .sm-work-body {
+    margin: 50px 10px;
+    width: 100%;
+  }
+  .sm-testimonial-card {
+    text-align: left;
+  }
+  .sm-float-right {
+    float: none;
+  }
+  .sm-work-wrap .sm-btn {
+    padding-top: 50px;
+  }
+  /* footer */
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .sm-contact-body {
+    flex-direction: column;
+  }
+  .sm-contact-form {
+    flex-direction: column;
+  }
+  form {
+    padding-top: 50px;
+  }
+  .sm-contact-form input {
+    width: 69%;
+  }
 }
