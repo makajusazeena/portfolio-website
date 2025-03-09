@@ -85,6 +85,7 @@ ul {
 }
 .primary-btn:hover {
   background-color: var(--secondary-100);
+  color: var(--white-100);
 }
 span {
   font-weight: 600;
@@ -115,17 +116,18 @@ nav ul {
   li:last-child {
     padding: 0;
   }
-  a {
+  .sm-nav-item {
     color: var(--secondary-100);
     font-weight: 500;
     text-transform: capitalize;
   }
-  a:hover,
-  a.active {
+  .sm-nav-item:hover,
+  .sm-nav-item.active {
     color: var(--primary-100);
     text-decoration: underline;
   }
 }
+
 /* HOME */
 .sm-home-wrap {
   padding: 100px 0;
