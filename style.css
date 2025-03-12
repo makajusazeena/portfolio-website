@@ -227,11 +227,8 @@ nav ul {
 }
 .flip-container {
   perspective: 1000px;
-  /* width: 100%; */
+  width: 100%;
   height: 350px;
-  display: flex;
-  justify-content: center; /* Centers flip on the same point */
-  align-items: center;
 }
 .flipper {
   position: relative;
