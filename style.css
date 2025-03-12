@@ -651,8 +651,8 @@ footer .sm-section-title.left h4 {
     font-size: 12px;
   }
   section {
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
   .sm-logo {
     height: 40px;
@@ -671,6 +671,7 @@ footer .sm-section-title.left h4 {
     text-align: right;
     padding: 15px 0;
     z-index: 9;
+    transition: 0.3s;
   }
   nav ul .sm-nav-item {
     color: var(--white-100);
@@ -701,11 +702,13 @@ footer .sm-section-title.left h4 {
     padding-top: 35px;
     padding-bottom: 35px;
   }
+  .sm-home-wrap .sm-image {
+    position: relative;
+  }
   .sm-home-wrap .sm-title {
-    width: 95%;
-    top: 14%;
-    left: 2.5%;
-    text-align: center;
+    position: inherit;
+    width: 100%;
+    padding: 10px 10px;
   }
   .sm-home-wrap .sm-body {
     width: 100%;
@@ -716,8 +719,7 @@ footer .sm-section-title.left h4 {
   }
   /* about */
   .sm-about-wrap {
-    /* padding-top: 160px; */
-    padding-top: 80px;
+    padding-top: 160px;
   }
   .sm-about-grid {
     margin: 35px 0;
@@ -732,15 +734,22 @@ footer .sm-section-title.left h4 {
     margin: 16px 0;
   }
   .sm-whatido-wrap {
-    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+  .sm-whatido-card {
+    height: auto;
   }
   /* brand */
+  .sm-scroll-wrap {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
   .sm-scroll-wrap h4 {
     width: 100%;
-    top: -34%;
+    top: -55%;
   }
   .sm-scroll-wrap img {
-    width: 60%;
+    width: 85%;
   }
   .sm-scroll-wrap h2 {
     font-size: 60px;
@@ -757,12 +766,15 @@ footer .sm-section-title.left h4 {
   /* counter */
   .sm-counter-body {
     flex-direction: column;
-    margin-bottom: 10px;
   }
   .sm-counter-body .sm-counter-item {
-    height: 130px;
+    padding: 36px 0;
+    margin: 10px;
   }
   /* work */
+  .sm-work-wrap {
+    padding-top: 80px;
+  }
   .sm-work-item {
     flex-direction: column;
     text-align: center;
@@ -773,7 +785,6 @@ footer .sm-section-title.left h4 {
   }
   .sm-work-body {
     margin: 50px 10px;
-    width: 100%;
   }
   .sm-testimonial-card {
     text-align: left;
@@ -788,9 +799,11 @@ footer .sm-section-title.left h4 {
   footer {
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 80px;
   }
   .sm-contact-body {
     flex-direction: column;
+    margin: 0;
   }
   .sm-contact-form {
     flex-direction: column;
