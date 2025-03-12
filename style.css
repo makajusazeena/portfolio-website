@@ -630,7 +630,7 @@ footer .sm-section-title.left h4 {
 
 @media (max-width: 450px) {
   h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
   h2 {
     font-size: 34px;
@@ -672,16 +672,16 @@ footer .sm-section-title.left h4 {
     padding: 15px 0;
     z-index: 9;
   }
-  nav ul a {
+  nav ul .sm-nav-item {
     color: var(--white-100);
   }
   /* nav ul a.active {
     color: var(--white-100);
   } */
   nav ul {
-    a:hover,
-    a.active {
-      color: var(--white-100);
+    .sm-nav-item:hover,
+    .sm-nav-item.active {
+      color: var(--secondary-100);
       text-decoration: underline;
     }
   }
@@ -703,7 +703,7 @@ footer .sm-section-title.left h4 {
   }
   .sm-home-wrap .sm-title {
     width: 95%;
-    top: 24%;
+    top: 18%;
     left: 2.5%;
     text-align: center;
   }
