@@ -44,6 +44,14 @@ document.addEventListener("scroll", function () {
     flipContainer.classList.remove("flipped"); // Flip back when scrolling up
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("sm-menu-toggle");
+  const nav = document.querySelector("nav");
+
+  menuToggle.addEventListener("click", function () {
+    nav.classList.toggle("active");
+  });
+});
 
 // jQuery(document).ready(function ($) {
 //   var mobBtn = $(".sm-btn-wrap #sm-mob-btn");
