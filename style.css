@@ -703,7 +703,7 @@ footer .sm-section-title.left h4 {
   }
   .sm-home-wrap .sm-title {
     width: 95%;
-    top: 18%;
+    top: 14%;
     left: 2.5%;
     text-align: center;
   }
@@ -716,7 +716,8 @@ footer .sm-section-title.left h4 {
   }
   /* about */
   .sm-about-wrap {
-    padding-top: 160px;
+    /* padding-top: 160px; */
+    padding-top: 80px;
   }
   .sm-about-grid {
     margin: 35px 0;
