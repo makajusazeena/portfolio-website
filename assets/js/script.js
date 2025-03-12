@@ -31,7 +31,7 @@ document.addEventListener("scroll", function () {
   const flipContainer = document.querySelector(".flip-container");
   const cardBody = document.querySelector(".sm-card-body");
   const cardBodyRect = cardBody.getBoundingClientRect();
-  const cardBodyMiddle = cardBodyRect.top + cardBodyRect.height * 0.4; // 50% of card body
+  const cardBodyMiddle = cardBodyRect.top + cardBodyRect.height * 0.5; // 50% of card body
   const windowHeight = window.innerHeight;
   // Step 1: Flip after passing slightly more than the middle of sm-card-body
   if (cardBodyMiddle < windowHeight * 0.5) {
