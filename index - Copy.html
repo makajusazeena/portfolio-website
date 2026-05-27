@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ═══════════════════════════════════════ HEADER ═══ -->
+    <!-- HEADER -->
     <header>
       <div class="sm-header-wrap">
         <a href="#">
@@ -50,7 +50,7 @@
           />
         </a>
         <div id="sm-menu-toggle"><i class="ri-menu-3-line"></i></div>
-        <nav id="sm-nav">
+        <nav>
           <ul>
             <li><a class="sm-nav-item active" href="#home">home</a></li>
             <li><a class="sm-nav-item" href="#about">about</a></li>
@@ -62,25 +62,20 @@
         </nav>
       </div>
     </header>
-
-    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <!-- HEADER -->
+    <!-- HERO SECTION -->
     <section id="home" class="sm-home-wrap">
       <div class="container">
         <div class="row">
-          <!-- Floating banner — sits above both columns on desktop -->
           <div class="sm-title">
             <p>Build. Launch. Grow.</p>
           </div>
-
-          <!-- Portrait image -->
           <div class="col-md-6 col-12 col-lg-6">
             <div class="sm-image">
-              <img src="./assets/images/sajina.png" alt="Sajina Makaju" />
+              <img src="./assets/images/sajina.png" alt="" />
             </div>
           </div>
-
-          <!-- Text body -->
-          <div class="col-md-6 col-12 col-lg-6">
+          <div class="col-md-7 col-12 col-lg-6">
             <div class="sm-body">
               <h1>How to grow your business online?</h1>
               <p>Start with a website that works.</p>
@@ -99,12 +94,16 @@
               </ul>
               <div class="sm-cta-btn">
                 <a
-                  href="https://wa.me/9779808771674?text=Hi%20Sajina,%20I'd%20like%20a%20free%20website%20audit%20for%20my%20business%20website."
+                  href="https://wa.me/9779808771674?text=Hi%20Sajina,%20I’d%20like%20a%20free%20website%20audit%20for%20my%20business%20website."
                   target="_blank"
                   class="primary-btn"
                   >🚀 Get Free Audit</a
                 >
-                <a href="tel:+9779808771674" class="primary-btn">
+                <a
+                  href="tel:+9779808771674"
+                  class="primary-btn"
+                  aria-readonly="true"
+                >
                   💬 WhatsApp
                 </a>
               </div>
@@ -113,18 +112,19 @@
         </div>
       </div>
     </section>
-
-    <!-- ═════════════════════════════════ COUNTER BLOCK ═══ -->
+    <!-- HERO SECTION -->
+    <!-- COUNTER BLOCK -->
     <section id="counterblock" class="sm-counter-wrap">
       <div class="container">
         <div class="row">
           <div class="sm-counter-body">
             <div class="sm-counter-item">
-              <div class="sm-counter-icon"><i class="ri-team-fill"></i></div>
+              <div class="sm-counter-icon">
+                <i class="ri-team-fill"></i>
+              </div>
               <h2 class="counter" data-target="55">0+</h2>
               <h6>clients</h6>
             </div>
-
             <div class="sm-counter-item">
               <div class="sm-counter-icon">
                 <i class="ri-file-edit-fill"></i>
@@ -132,9 +132,10 @@
               <h2 class="counter" data-target="111">0+</h2>
               <h6>projects</h6>
             </div>
-
             <div class="sm-counter-item">
-              <div class="sm-counter-icon"><i class="ri-award-fill"></i></div>
+              <div class="sm-counter-icon">
+                <i class="ri-award-fill"></i>
+              </div>
               <h2 class="counter" data-target="11">0+</h2>
               <h6>years of experience</h6>
             </div>
@@ -142,25 +143,24 @@
         </div>
       </div>
     </section>
-
-    <!-- ══════════════════════════════════════ ABOUT ═══ -->
+    <!-- COUNTER BLOCK -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="sm-about-wrap">
       <div class="container">
         <div class="row">
           <div class="sm-section-title left">
             <h3>about me</h3>
             <h4>
-              Hi, I'm Sajina — I create fast and SEO-friendly websites that are
+              Hi, I’m Sajina — I create fast and SEO-friendly websites that are
               easy to manage, help bring in more customers, and make it simple
               for business owners to handle things like inquiries, records, and
               daily updates from one place.
             </h4>
           </div>
-
-          <!-- Problem -->
-          <div class="col-md-6 col-12 col-lg-6 mb-4">
+          <!-- LEFT: Problem -->
+          <div class="col-md-6 col-12 col-lg-6">
             <div class="about-card problem">
-              <h5>Why visitors don't become customers:</h5>
+              <h5>Why visitors don’t become customers:</h5>
               <ul>
                 <li><i class="ri-speed-line"></i> Slow loading websites</li>
                 <li><i class="ri-layout-masonry-line"></i> Outdated design</li>
@@ -172,9 +172,8 @@
               </ul>
             </div>
           </div>
-
-          <!-- Solution -->
-          <div class="col-md-6 col-12 col-lg-6 mb-4">
+          <!-- RIGHT: Solution -->
+          <div class="col-md-6 col-12 col-lg-6">
             <div class="about-card solution">
               <h5>I fix this by building websites that are:</h5>
               <ul>
@@ -192,12 +191,12 @@
         </div>
       </div>
     </section>
-
-    <!-- ══════════════════════════════════ HOW I WORK ═══ -->
+    <!-- ABOUT SECTION -->
+    <!-- how it works design 1 -->
     <section class="how-i-work" id="howiwork">
       <div class="container">
         <div class="section-head">
-          <span class="sub-title">My Process</span>
+          <p class="sub-title">My Process</p>
           <h2>How I Work</h2>
           <p class="section-desc">
             I build websites with a clear focus — helping your business get more
@@ -252,29 +251,25 @@
         </div>
       </div>
     </section>
+    <!-- how i work design 1 -->
 
-    <!-- ════════════════════════════════════════ WORK ═══ -->
+    <!-- WORK -->
     <section id="work" class="sm-work-wrap">
       <div class="container">
         <div class="section-head">
-          <span class="sub-title">Recent Works</span>
+          <p class="sub-title">Recent Works</p>
           <h2>Built with purpose</h2>
           <p class="section-desc">
             Each project is focused on creating a better user experience,
             stronger online presence, and clearer customer interaction.
           </p>
         </div>
-
         <div class="row">
-          <!-- Work item 1 -->
           <div class="sm-work-item">
             <div class="col-md-6 col-12 col-lg-6">
               <div class="sm-image">
                 <a href="#">
-                  <img
-                    src="assets/images/portfolio-04.png"
-                    alt="Kasa Boxing website"
-                  />
+                  <img src="assets/images/portfolio-04.png" alt="" />
                 </a>
               </div>
             </div>
@@ -284,14 +279,16 @@
                   <h5>kasa boxing</h5>
                   <p>
                     Kasa Boxing is a one-page boxing club website designed to
-                    showcase the gym's energy, services, and training programs.
+                    showcase the gym’s energy, services, and training programs.
                     Built with HTML, CSS, and JavaScript, and powered by
-                    WordPress CMS. The site features a detailed services section
-                    covering boxing fundamentals, strength training, and
-                    conditioning, along with a pricing section displaying
-                    membership plans. An embedded video offers a glimpse into
-                    the gym's dynamic environment, while a contact form
-                    integrates with email for quick inquiries and bookings.
+                    WordPress Content Management System. The site features a
+                    detailed services section covering boxing fundamentals,
+                    strength training, and conditioning, along with a pricing
+                    section displaying membership plans. An embedded video
+                    offers a glimpse into the gym’s dynamic environment, while a
+                    contact form seamlessly integrates with email for quick
+                    inquiries and bookings. This project delivers a professional
+                    and engaging online presence for Kasa Boxing.
                   </p>
                   <a href="#" class="sm-vist-link">visit website</a>
                 </div>
@@ -300,10 +297,10 @@
                     <i class="ri-double-quotes-l"></i> Thanks to Sajina, our
                     boxing club now has a clean and easy-to-use website. It has
                     everything we need, and the process was smooth. Appreciate
-                    the great work! <i class="ri-double-quotes-r"></i>
+                    the great work!<i class="ri-double-quotes-r"></i>
                   </p>
                   <div class="sm-testimonial-body">
-                    <img src="assets/images/dummy.jpeg" alt="Rohit Awale" />
+                    <img src="assets/images/dummy.jpeg" alt="" />
                     <div class="sm-testimonial-title">
                       <h6>rohit awale</h6>
                       <h6>founder, kasa boxing</h6>
@@ -313,8 +310,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Work item 2 -->
           <div class="sm-work-item">
             <div class="col-md-6 col-12 col-lg-6">
               <div class="sm-work-body">
@@ -335,13 +330,13 @@
                 <div class="sm-testimonial-card">
                   <p>
                     <i class="ri-double-quotes-l"></i> Sajina has done a great
-                    job building our coffee shop's website on an affordable
-                    budget. It's clean, easy to navigate, and the online
+                    job building our coffee shop’s website on an affordable
+                    budget. It’s clean, easy to navigate, and the online
                     ordering system works smoothly, making it easier for
-                    customers to order. <i class="ri-double-quotes-r"></i>
+                    customers to order.<i class="ri-double-quotes-r"></i>
                   </p>
                   <div class="sm-testimonial-body">
-                    <img src="assets/images/dummy.jpeg" alt="Rijan Kafle" />
+                    <img src="assets/images/dummy.jpeg" alt="" />
                     <div class="sm-testimonial-title">
                       <h6>Rijan Kafle</h6>
                       <h6>founder, brew haven</h6>
@@ -356,31 +351,27 @@
                   <img
                     src="assets/images/portfolio-02.jpg"
                     class="sm-float-right"
-                    alt="Brew Haven website"
+                    alt=""
                   />
                 </a>
               </div>
             </div>
           </div>
         </div>
-
         <div class="sm-btn text-center">
           <a href="#" class="primary-btn">load more</a>
         </div>
       </div>
     </section>
-
-    <!-- ════════════════════════════════════ FOOTER ═══ -->
     <footer id="findme" class="sm-contact-wrap">
       <div class="container">
         <div class="sm-section-title left">
           <h3>Ready to grow your business online?</h3>
           <h4>
-            Have an idea or an epic project in mind? Let's build a website that
+            Have an idea or an epic project in mind? Let’s build a website that
             actually works for you.
           </h4>
         </div>
-
         <div class="row">
           <div class="sm-contact-body">
             <div class="col-md-6">
@@ -399,21 +390,16 @@
             <div class="col-md-4">
               <h6>contact us</h6>
               <ul>
-                <li><a href="tel:+9779808771674">+977 9808771674</a></li>
-                <li>
-                  <a href="mailto:sajinamakaju.np@gmail.com"
-                    >sajinamakaju.np@gmail.com</a
-                  >
-                </li>
+                <li><a href="#">+977 9808771674</a></li>
+                <li><a href="#">sajinamakaju.np@gmail.com</a></li>
               </ul>
             </div>
           </div>
-
           <div class="sm-contact-form">
-            <div class="col-md-7 col-12">
+            <div class="col-md-7">
               <div class="sm-contact-btn">
                 <a
-                  href="https://wa.me/9779808771674?text=Hi%20Sajina,%20I'd%20like%20a%20free%20website%20audit%20for%20my%20business%20website."
+                  href="https://wa.me/9779808771674?text=Hi%20Sajina,%20I’d%20like%20a%20free%20website%20audit%20for%20my%20business%20website."
                   target="_blank"
                   class="primary-btn"
                   >🚀 Get Free Audit</a
@@ -423,7 +409,7 @@
                 >
               </div>
             </div>
-            <div class="col-md-5 col-12">
+            <div class="col-md-5">
               <form action="">
                 <input type="text" placeholder="Message" />
                 <a href="#" class="primary-btn">submit</a>
@@ -431,7 +417,6 @@
             </div>
           </div>
         </div>
-
         <div class="sm-copyright-wrap">
           <div class="sm-divider"></div>
           <div class="sm-copyright-body text-center">
@@ -440,31 +425,9 @@
         </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
+    <!-- WORK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="assets/js/script.js"></script>
-
-    <!-- Mobile nav toggle -->
-    <script>
-      const toggle = document.getElementById("sm-menu-toggle");
-      const nav = document.getElementById("sm-nav");
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        const icon = toggle.querySelector("i");
-        icon.classList.toggle("ri-menu-3-line");
-        icon.classList.toggle("ri-close-line");
-      });
-      // Close nav when a link is clicked
-      nav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          nav.classList.remove("open");
-          const icon = toggle.querySelector("i");
-          icon.classList.add("ri-menu-3-line");
-          icon.classList.remove("ri-close-line");
-        });
-      });
-    </script>
   </body>
 </html>
