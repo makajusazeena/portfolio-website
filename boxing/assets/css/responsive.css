@@ -1,0 +1,545 @@
+/* ============================================================
+   ARC BOXING — RESPONSIVE STYLESHEET
+   Paste this AFTER your style.css link tag:
+   <link rel="stylesheet" href="assets/css/responsive.css" />
+   Breakpoints: 1200px | 992px | 768px | 576px | 400px
+   ============================================================ */
+
+/* ---------------------------------------------------------------
+   1. LARGE SCREENS (≤1200px)
+   --------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9px base */
+  }
+
+  .kb-home .slide {
+    width: 100%;
+    padding: 2rem 5%;
+  }
+
+  .kb-home .content {
+    width: 50rem;
+  }
+
+  .kb-footer .kb-form {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------
+   2. MEDIUM-LARGE (≤992px) — tablets landscape, small laptops
+   --------------------------------------------------------------- */
+@media (max-width: 992px) {
+  html {
+    font-size: 50%; /* 8px base */
+  }
+
+  section {
+    padding: 4rem 3rem;
+  }
+
+  /* Header */
+  .kb-header .container .kb-navbar {
+    display: none;
+  }
+
+  #kb-mob-btn {
+    display: inline-block;
+  }
+
+  /* Mobile nav overlay */
+  .kb-navbar.kb-active {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    max-width: 30rem;
+    height: 100vh;
+    background: var(--black);
+    z-index: 9999;
+    padding: 8rem 2rem 3rem;
+    gap: 0.5rem;
+    overflow-y: auto;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+    animation: slideInLeft 0.25s ease;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .kb-navbar.kb-active a {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .kb-navbar.kb-active a:hover {
+    background: var(--yellow);
+    color: var(--white);
+  }
+
+  /* Nav overlay close backdrop */
+  .kb-nav-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9998;
+  }
+
+  .kb-nav-backdrop.kb-active {
+    display: block;
+  }
+
+  /* Hero */
+  .kb-home .slide {
+    min-height: 75vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+
+  .kb-home .content {
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  /* About */
+  .kb-about .kb-content {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  /* Skills */
+  .kb-skills .kb-wrap-image {
+    display: none;
+  }
+
+  /* Pricing boxes side-by-side on tablet */
+  .kb-pricing .box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .kb-pricing .box .kb-plan {
+    text-align: left;
+  }
+
+  /* Trainers */
+  .kb-trainer .box .kb-image {
+    margin: 0 10px;
+    height: 35rem;
+  }
+
+  /* Testimonial */
+  .kb-testimonial .kb-wrap-testimonial {
+    width: 90%;
+  }
+
+  /* Footer form */
+  .kb-footer .kb-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .kb-footer .kb-form input {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------
+   3. TABLETS / LARGE PHONES (≤768px)
+   --------------------------------------------------------------- */
+@media (max-width: 768px) {
+  html {
+    font-size: 46.875%; /* 7.5px base */
+  }
+
+  section {
+    padding: 4rem 2rem;
+  }
+
+  /* Header */
+  .kb-header .container {
+    padding: 0 1.5rem;
+  }
+
+  .kb-header .container .kb-logo img {
+    height: 7rem;
+  }
+
+  .kb-header .container .kb-menu-btn .kb-btn {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Hero */
+  .kb-home {
+    margin-top: 5.5rem;
+  }
+
+  .kb-home .slide {
+    min-height: 65vh;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);
+    padding: 2rem 4%;
+  }
+
+  .kb-home .content h3 {
+    font-size: 3.5rem;
+  }
+
+  .kb-home .content span {
+    font-size: 2rem;
+  }
+
+  /* About — stack image above text */
+  .kb-about .row {
+    flex-direction: column;
+  }
+
+  .kb-about .kb-image::before,
+  .kb-about .kb-image::after {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .kb-about .kb-content {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  /* Services — 2-col on tablet */
+  .kb-service .col-md-4 {
+    width: 50%;
+  }
+
+  .kb-service .box img {
+    height: 35rem;
+  }
+
+  /* Skills — stack columns */
+  .kb-skills .row {
+    flex-direction: column;
+  }
+
+  .kb-skills .col-md-6,
+  .kb-skills .col-md-3 {
+    width: 100%;
+  }
+
+  .kb-skills .kb-wrap-image {
+    display: none;
+  }
+
+  .kb-skills .kb-wrap-list {
+    column-count: 2;
+  }
+
+  .kb-skills .kb-wrap-list li {
+    margin: 1rem 0;
+  }
+
+  /* Pricing — full width, stack layout */
+  .kb-pricing .box-container .row .col-md-5,
+  .kb-pricing .box-container .row .col-md-7 {
+    width: 100%;
+  }
+
+  .kb-pricing .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+
+  .kb-pricing .box .kb-plan {
+    text-align: right;
+  }
+
+  /* Trainers — 2-col */
+  .kb-trainer .row .col-md-4 {
+    width: 50%;
+  }
+
+  .kb-trainer .box .kb-image {
+    margin: 0 8px;
+    height: 30rem;
+  }
+
+  /* Training video */
+  .kb-training .kb-training-video {
+    min-height: 50vh;
+  }
+
+  /* Contact — stack form + map */
+  .kb-contact .row {
+    flex-direction: column;
+  }
+
+  .kb-contact .col-md-6 {
+    width: 100%;
+  }
+
+  .kb-contact .kb-google-map {
+    margin-top: 3rem;
+  }
+
+  /* Footer — 2-col grid */
+  .kb-footer .container .row .col-md-3 {
+    width: 50%;
+  }
+}
+
+/* ---------------------------------------------------------------
+   4. PHONES (≤576px)
+   --------------------------------------------------------------- */
+@media (max-width: 576px) {
+  html {
+    font-size: 43.75%; /* 7px base */
+  }
+
+  section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  /* Header */
+  .kb-header .container .kb-logo img {
+    height: 6rem;
+  }
+
+  .kb-header .container .kb-menu-btn .kb-btn {
+    display: none; /* hide "join us" on tiny screens, save space */
+  }
+
+  #kb-mob-btn {
+    font-size: 3.2rem;
+  }
+
+  /* Hero */
+  .kb-home {
+    margin-top: 5rem;
+  }
+
+  .kb-home .slide {
+    min-height: 85vh;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    padding: 2rem 5%;
+  }
+
+  .kb-home .content {
+    width: 100%;
+  }
+
+  .kb-home .content span {
+    font-size: 1.8rem;
+  }
+
+  .kb-home .content h3 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  /* About */
+  .kb-about .kb-image::before,
+  .kb-about .kb-image::after {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  /* Headings */
+  .kb-heading {
+    font-size: 3.5rem;
+  }
+
+  /* Services — single column */
+  .kb-service .col-md-4 {
+    width: 100%;
+  }
+
+  .kb-service .box img {
+    height: 30rem;
+  }
+
+  /* Service content always visible on mobile (no hover needed) */
+  .kb-service .box .kb-content {
+    transform: translate(-50%, -50%) scale(1);
+    width: 95%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  /* Skills */
+  .kb-skills .kb-wrap-list {
+    column-count: 1;
+  }
+
+  /* Pricing */
+  .kb-pricing .box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .kb-pricing .box .kb-plan {
+    text-align: left;
+    width: 100%;
+  }
+
+  .kb-pricing .box .kb-plan span {
+    float: none;
+    display: block;
+    margin-top: 0.3rem;
+  }
+
+  /* Trainers — single column */
+  .kb-trainer .row .col-md-4 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .kb-trainer .box .kb-image {
+    margin: 0;
+    height: 38rem;
+  }
+
+  /* Always show trainer info on mobile */
+  .kb-trainer .box .kb-content {
+    transform: translateY(0);
+  }
+
+  /* Testimonial */
+  .kb-testimonial .kb-wrap-testimonial {
+    width: 100%;
+  }
+
+  .kb-testimonial p {
+    font-size: 1.6rem;
+  }
+
+  /* Training video */
+  .kb-training .kb-training-video {
+    min-height: 40vh;
+  }
+
+  .kb-training .kb-training-video .kb-content i {
+    font-size: 6rem;
+  }
+
+  /* Contact form — single column inputs */
+  .kb-contact .kb-contact-form .col-md-6 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer — single column */
+  .kb-footer .container .row .col-md-3 {
+    width: 100%;
+  }
+
+  .kb-footer .kb-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .kb-footer .kb-form input {
+    width: 100%;
+  }
+
+  .kb-footer .kb-form .kb-btn {
+    margin-top: 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+   5. SMALL PHONES (≤400px)
+   --------------------------------------------------------------- */
+@media (max-width: 400px) {
+  html {
+    font-size: 40%; /* 6.4px base */
+  }
+
+  .kb-home .slide {
+    min-height: 90vh;
+  }
+
+  .kb-home .content h3 {
+    font-size: 2.8rem;
+  }
+
+  .kb-pricing .box {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .kb-trainer .box .kb-image {
+    height: 32rem;
+  }
+}
+
+/* ---------------------------------------------------------------
+   6. UTILITY — fixes that apply across all responsive sizes
+   --------------------------------------------------------------- */
+
+/* Prevent horizontal overflow site-wide */
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Images never overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* iframe (Google map) fits its container */
+.kb-google-map iframe {
+  width: 100% !important;
+  display: block;
+}
+
+/* Form inputs: full width on all sizes */
+.kb-contact .kb-contact-form input,
+.kb-contact .kb-contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Swiper pagination: always visible */
+.swiper-pagination {
+  position: absolute;
+  bottom: 12% !important;
+}
+
+/* Bootstrap col resets for explicit width overrides above */
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7 {
+  min-width: 0; /* prevents content from blowing out flex containers */
+}
+
+/* Make sure nav close button is always clickable on mobile overlay */
+.kb-navbar.kb-active #kb-close-nav {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: var(--white);
+  cursor: pointer;
+}
