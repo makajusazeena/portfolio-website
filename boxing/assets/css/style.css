@@ -616,6 +616,9 @@ p:last-child {
   padding-right: 0.8rem;
   color: var(--yellow);
 }
+.kb-footer .kb-content li a {
+  color: var(--lightgray);
+}
 .kb-footer .kb-group {
   font-size: 1.5rem;
   color: var(--lightgray);
